@@ -23,5 +23,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/sai.suharika.chakka/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar" sourcepath="C:/Users/sai.suharika.chakka/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.aventstack"/>
+			<attribute name="maven.artifactId" value="extentreports"/>
+			<attribute name="maven.version" value="4.0.9"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

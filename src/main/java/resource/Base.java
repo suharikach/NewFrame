@@ -37,13 +37,14 @@ driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 //all test cases will wait for 30 secs
 return driver;
 }
-public void getScreenshot(String MethodName, WebDriver driver)
+public String getScreenshot(String MethodName, WebDriver driver)
 {
 	Date d= new Date();
 	SimpleDateFormat sd= new SimpleDateFormat("M_dd_YYYY");
 	TakesScreenshot ts=(TakesScreenshot)driver;
 	File src=ts.getScreenshotAs(OutputType.FILE);
-	File dest= new File(System.getProperty("user.dir")+"/Screenshot/selenium"+MethodName+".png");
+	String d1=System.getProperty("user.dir")+"/Screenshot/selenium"+MethodName+".png";
+	File dest= new File(d1);
 //FileHandler.copy(src,dest);
 	try {
 		FileUtils.copyFile(src,dest);
@@ -51,6 +52,7 @@ public void getScreenshot(String MethodName, WebDriver driver)
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	return d1;
 
 }
 
